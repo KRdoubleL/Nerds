@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=latin,cyrillic"
+		rel="stylesheet" type="text/css">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>HTML Academy: Нёрдс</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<a href="index.html"><img src="img/nerds-logo.png.png" alt="лого сайта нердс" width="160" height="65" class="main-logo"></a>
+				<ul class="main-nav">
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a class="selected">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="busket">
+					<img src="img/cart-icon.png" width="15" height="15" alt="cart image">
+					<a class="selected" href="#">Корзина</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="page-title">
+			<div class="container">
+				<h1 class="about-page">Магазин готовых шаблонов</h1>
+			</div>
+		</div>
+
+		<div class="main-catalog">
+			<div class="container">
+				<div class="filter-sort">
+					<b>Стоимость:</b>
+					<form action="form.php" method="GET">
+						<div class="filter-price">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+								<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+							</div>
+						</div>
+						<div class="net">
+							<p>Сетка:</p>
+							<input class="input-radio"  type="radio" name="net-type" id="adaptive-field"
+							value="адаптивная верстка" checked>
+							<span class="sprite sprite-radio"></span>
+							<label class="radio-label" for="adaptive-field">Адаптивная</label><br>
+
+							<input class="input-radio" type="radio" name="net-type" id="fixed-field" value="фиксированная верстка">
+							<span class="sprite sprite-radio"></span>
+							<label class="radio-label" for="fixed-field">Фиксированная</label><br>
+
+							<input class="input-radio" type="radio" name="net-type" id="rubber-field" value="резиновая верстка">
+							<span class="sprite sprite-radio"></span>
+							<label class="radio-label" for="rubber-field">Резиновая</label><br>
+						</div>
+						<div class="features">
+						<p>Особенности:</p>
+							<input class="input-checkbox" type="checkbox" name="slider" id="slider-field" value="Слайдер" checked>
+							<span class="sprite sprite-xheckbox"></span>
+							<label class="checkbox-label" for="slider-field">Слайдер</label><br>
+
+							<input class="input-checkbox" type="checkbox" name="advantages" id="advantages-field" value="Блок преимуществ">
+							<span class="sprite sprite-xheckbox"></span>
+							<label class="checkbox-label" for="advantages-field">Блок преимуществ</label><br>
+
+							<input class="input-checkbox" type="checkbox" name="news" id="news-field" value="Новости" checked>
+							<span class="sprite sprite-xheckbox"></span>
+							<label class="checkbox-label" for="news-field">Новости</label><br>
+
+							<input class="input-checkbox" type="checkbox" name="gallery" id="gallery-field" value="Галерея">
+							<span class="sprite sprite-xheckbox"></span>
+							<label class="checkbox-label" for="gallery-field">Галерея</label><br>
+
+							<input class="input-checkbox" type="checkbox" name="basket" id="basket-field" value="Корзина">
+							<span class="sprite sprite-xheckbox"></span>
+							<label class="checkbox-label" for="basket-field">Корзина</label><br>
+						</div>
+						<a class="btn btn-filter" href="#">Показать</a>
+						<!--<input type="submit" method="get" value="Показать">-->
+					</form>
+				</div>
+				<div class="sort-site">
+					<div class="sort-by">
+						<h3>Сортировать:</h3>
+						<div class="filter-type">
+							<button class="checked-price">По цене</button>
+							<button>По типу</button>
+							<button>По названию</button>
+							<button class="filter-arrow down"></button>
+							<button class="filter-arrow up"></button>
+						</div>
+					</div>
+					<div class="site-list">
+						<div class="site-item">
+							<div class="browse">
+								<ul class="browse-dots">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<img src="img/img-sedona.jpg.jpg" width="360" height="576" alt="sedona">
+							<div class="price-hidden">
+								<div class="price-hidden__title"><b><a href="#">Sedona</a></b></div>
+								<div class="price-hidden__info"><span>Информационный сайт<br>для туристов</span></div>
+								<div class="price-hidden__link"><a href="#" class="btn">9 900Руб.</a></div>
+							</div>
+						</div>
+						<div class="site-item empty">
+							<div class="browse">
+								<ul class="browse-dots">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+								<img src="img/img-pink.jpg"  width="360" height="576" alt="pink app">
+								<div class="price-hidden">
+									<div class="price-hidden__title"><b><a href="#">Pink app</a></b></div>
+									<div class="price-hidden__info"><span>Продуктивный лендинг<br>приложения для iOS и Android</span></div>
+									<div class="price-hidden__link"><a href="#" class="btn">9 900Руб.</a></div>
+							</div>
+						</div>
+						<div class="site-item">
+							<div class="browse">
+								<ul class="browse-dots">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<img src="img/img-barbershop.jpg" width="360" height="576" alt="borodinski">
+							<div class="price-hidden">
+								<div class="price-hidden__title"><b><a href="#">Borodinski</a></b></div>
+								<div class="price-hidden__info"><span>Cайт салона красоты.<br>Для мужчин, да</span></div>
+								<div class="price-hidden__link"><a href="#" class="btn">9 900Руб.</a></div>
+							</div>
+						</div>
+						<div class="site-item empty">
+							<div class="browse">
+								<ul class="browse-dots">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<img src="img/img-mishka.jpg" class="" width="360" height="576" alt="mishka">
+							<div class="price-hidden">
+								<div class="price-hidden__title"><b><a href="#">Mishka</a></b></div>
+								<div class="price-hidden__info"><span>Интернет-магазин<br>вязаных игрушек</span></div>
+								<div class="price-hidden__link"><a href="#" class="btn">9 900Руб.</a></div>
+							</div>
+						</div>
+						<div class="site-item">
+							<div class="browse">
+								<ul class="browse-dots">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<img src="img/img-aplus.jpg" class="zero" width="360" height="576" alt="A plus">
+							<div class="price-hidden">
+								<div class="price-hidden__title"><b><a href="#">A plus</a></b></div>
+								<div class="price-hidden__info"><span>Лендинг курсов повышения<br>квалификации</span></div>
+								<div class="price-hidden__link"><a href="#" class="btn">9 900Руб.</a></div>
+							</div>
+						</div>
+						<div class="site-item empty">
+							<div class="browse">
+								<ul class="browse-dots">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<img src="img/img-kvast.jpg" class=" zero" width="360" height="576" alt="kvast">
+							<div class="price-hidden">
+								<div class="price-hidden__title"><b><a href="#">Кваст</a></b></div>
+								<div class="price-hidden__info"><span>Промо-сайт производителя<br>крафтового кваса</span></div>
+								<div class="price-hidden__link"><a href="#" class="btn">9 900Руб.</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="pages">
+						<ul class="list-pages">
+							<li><a class="active">1</a></li>
+							<li><a class="pg" href="#">2</a></li>
+							<li><a class="pg" href="#">3</a></li>
+							<li><a class="next-page pg" href="#">Следующая</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-map">
+			<div class="container">
+				<div class="contact">
+					<div class="write-to-us">
+						<h4>Nёrds Design Studio</h4>
+						<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+						<p class="phone">тел. +7 (812) 275-75-75</p>
+						<a class="btn btn-modal" href="#open-modal">Напишите нам</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cover">
+			<div class="modal-content">
+				<button class="modal-content-close" type="button"></button>
+				<h2 class="modal-content-title">Напишите нам</h2>
+				<form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+					<div class="modal-erea erea-1">
+						<label for="name-field">Ваше имя:</label>
+						<input class="enter-data" type="text" name="name" id="name-field" placeholder="Представтесь, пожалуйста" required>
+					</div>
+					<div class="modal-erea erea-2">
+						<label for="email-field">Ваш e-mail:</label>
+						<input class="enter-data" type="email" name="email" id="email-field" placeholder="Для отправки ответа" required>
+					</div>
+					<div class="modal-erea erea-3">
+						<label for="question-field">Текст письма:</label>
+						<input class="enter-data" type="text" name="question" id="question-field" placeholder="В свободной форме" required>
+					</div>
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+		<footer class="main-footer">
+			<div class="container">
+				<ul class="social-friend">
+					<li class="footer-social">
+						<a href="#" class="vk"></a>
+					</li>
+					<li>
+						<a href="#" class="fb"></a>
+					</li>
+					<li>
+						<a href="#" class="inst"></a>
+					</li>
+				</ul>
+				<div class="friendship">
+					<span>Давайте дружить, это выгодно!</span>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>
